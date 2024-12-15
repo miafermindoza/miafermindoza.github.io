@@ -13,115 +13,93 @@
             box-sizing: border-box;
         }
 
-        /* Body Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+    /* Body Styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+        line-height: 1.6;
+    }
 
-        /* Sidebar Navigation */
-        .sidebar {
-            width: 200px;
-            background-color: #fff;
-            padding: 20px;
-            position: fixed;
-            height: 100vh;
-        }
+    /* Title and Navigation Container */
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        border-bottom: 1px solid #ddd;
+    }
 
-        .sidebar a {
-            display: block;
-            color: #007AFF;
-            text-decoration: none;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            transition: color 0.3s;
-        }
+    .title {
+        padding: 10px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-        .sidebar a:hover {
-            color: #0056b3;
-        }
+    .nav {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
 
-        /* Main Content */
-        .main {
-            margin-left: 220px;
-            padding: 40px;
-            flex: 1;
-        }
+    .nav table {
+        border-collapse: collapse;
+    }
 
-        /* Headings */
-        h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    .nav td {
+        border: 1pt solid black;
+        padding: 10px 20px;
+        text-align: center;
+    }
 
-        h2 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 20px 0 10px;
-        }
+    .nav a {
+        color: #FF5C5C; /* Light red */
+        text-decoration: none;
+        font-size: 1rem;
+    }
 
-        /* Paragraphs */
-        p {
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
+    .nav a:hover {
+        color: black;
+    }
 
-        /* Hyperlinks */
-        a {
-            color: #007AFF;
-            text-decoration: none;
-        }
+    /* Night Mode Link */
+    .night-mode {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1rem;
+        color: #FF5C5C;
+        cursor: pointer;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    .night-mode:hover {
+        color: black;
+    }
 
-        /* Lists */
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
+    /* Content Area */
+    .content {
+        margin-top: 120px; /* Adjust for fixed header */
+        padding: 20px;
+    }
+</style>
+<script>
+    function toggleNightMode() {
+        const body = document.body;
+        const links = document.querySelectorAll('a');
 
-        ul li {
-            margin-bottom: 10px;
+        if (body.style.backgroundColor === 'black') {
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            links.forEach(link => link.style.color = '#FF5C5C');
+        } else {
+            body.style.backgroundColor = 'black';
+            body.style.color = 'white';
+            links.forEach(link => link.style.color = '#66d9ff');
         }
-
-        /* Night Mode */
-        .night-mode {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 1rem;
-            color: #007AFF;
-            cursor: pointer;
-        }
-    </style>
-    <script>
-        function toggleNightMode() {
-            const body = document.body;
-            const sidebar = document.querySelector('.sidebar');
-            const links = document.querySelectorAll('a');
-
-            if (body.style.backgroundColor === 'black') {
-                body.style.backgroundColor = 'white';
-                body.style.color = 'black';
-                sidebar.style.backgroundColor = 'white';
-                links.forEach(link => link.style.color = '#007AFF');
-            } else {
-                body.style.backgroundColor = 'black';
-                body.style.color = 'white';
-                sidebar.style.backgroundColor = 'black';
-                links.forEach(link => link.style.color = '#66d9ff');
-            }
-        }
-    </script>
+    }
+</script>
 </head>
 <body>
     <div class="sidebar">
@@ -137,7 +115,7 @@
         <h2 id="about"></h2>
         <h2 id="work"></h2>
         <h2 id="law"></h2>
-        <h2 id="contact">Contact</h2>
+        <h2 id="contact"></h2>
    
     </div>
 </body>
