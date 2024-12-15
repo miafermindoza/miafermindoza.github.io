@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #111;
     margin: 0;
@@ -16,9 +16,19 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+
 }
 
 .tagline {
