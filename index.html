@@ -1,11 +1,10 @@
-<br /><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your professional brutalist website">
-    <title>
-      </title>
+    <title>Your Name | About</title>
     <style>
         /* General Reset */
         * {
@@ -28,11 +27,10 @@
         /* Sidebar Navigation */
         .sidebar {
             width: 200px;
-            background-color: #f4f4f4;
+            background-color: #fff;
             padding: 20px;
             position: fixed;
             height: 100vh;
-            border-right: 2px solid #ddd;
         }
 
         .sidebar a {
@@ -114,12 +112,12 @@
             if (body.style.backgroundColor === 'black') {
                 body.style.backgroundColor = 'white';
                 body.style.color = 'black';
-                sidebar.style.backgroundColor = '#f4f4f4';
+                sidebar.style.backgroundColor = 'white';
                 links.forEach(link => link.style.color = '#007AFF');
             } else {
                 body.style.backgroundColor = 'black';
                 body.style.color = 'white';
-                sidebar.style.backgroundColor = '#333';
+                sidebar.style.backgroundColor = 'black';
                 links.forEach(link => link.style.color = '#66d9ff');
             }
         }
@@ -134,10 +132,16 @@
     </div>
     <div class="main">
         <span class="night-mode" onclick="toggleNightMode()">Night Mode</span>
-        <h1></h1>
-      <br/><br /><br /><br /><br /><br /><br /><br />
+        <h1>Your Name</h1>
         <h2 id="about">About</h2>
+        <p>This is a clean, minimalist brutalist website design inspired by <a href="https://www.polylists.com/about/" target="_blank">Polylists</a>. The focus is on clarity and simplicity, with well-defined margins and straightforward typography.</p>
         <h2 id="work">Work</h2>
+        <p>Include your professional details here, such as your job title, expertise, and any key achievements.</p>
+        <ul>
+            <li>Key Skill 1</li>
+            <li>Key Skill 2</li>
+            <li>Key Skill 3</li>
+        </ul>
         <h2 id="law">Law</h2>
         <p>Highlight your expertise in law, key areas of study, or notable accomplishments.</p>
         <h2 id="contact">Contact</h2>
