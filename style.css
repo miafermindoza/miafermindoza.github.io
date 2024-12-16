@@ -2,14 +2,14 @@
 {
     font-family: authentic;
 
-    src: url(https://github.com/miafermindoza/miafermindoza.github.io/docs/assets/fonts/FreeUniversal-Regular.ttf);
+    src: url(docs/assets/fonts/FreeUniversal-Regular.ttf);
 }
 
 @font-face
 {
     font-family: authentic-bold;
 
-    src: url(https://github.com/miafermindoza/miafermindoza.github.io/docs/assets/fonts/FreeUniversal-Regular.ttf);
+    src: url(docs/assets/fonts/FreeUniversal-Regular.ttf);
 }
 
 *{
