@@ -1,13 +1,13 @@
 @font-face
 {
 
-    src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
+    src:url('/docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
 
 @font-face
 {
 
-    src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
+    src:url('/docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
 
 *{
@@ -19,7 +19,7 @@
 
 body
 {
-    src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
+    src:url('/docs/assets/fonts/FreeUniversal-Regular.ttf');
 
     overflow-x: hidden;
 
