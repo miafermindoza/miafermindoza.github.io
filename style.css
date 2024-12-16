@@ -1,13 +1,15 @@
 @font-face
 {
 
-    src:url('/docs/assets/fonts/FreeUniversal-Regular.ttf');
+  font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
 
 @font-face
 {
 
-    src:url('/docs/assets/fonts/FreeUniversal-Regular.ttf');
+font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
 
 *{
@@ -20,7 +22,7 @@
 body
 {
     font-family: 'FreeUniversal-Regular.ttf';   
-    src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
 
     overflow-x: hidden;
 
@@ -115,7 +117,8 @@ nav
 {
     display: inline-block;
 
-    font-family: authentic;
+    font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
     font-size: 16px;
     background-color: white;
     padding-left: 15px;
@@ -376,7 +379,8 @@ nav
 
 /*.landing_text
 {
-    font-family: times_light;
+    font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
     font-size: 36px;
 
     margin: 0;
@@ -604,13 +608,15 @@ input[type='checkbox']
 
 .largeText
 {
-    font-family: authentic;
+    font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
     font-size: 24px;
     line-height: 1.5;
 
 }
 .left.largeText{
-    font-family: authentic-bold;
+    font-family: 'FreeUniversal-Regular.ttf';   
+    src:url('../docs/assets/fonts/FreeUniversal-Regular.ttf');
     padding-right: 60px;
 }
 .leftCont
