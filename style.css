@@ -1,13 +1,11 @@
 @font-face
 {
-    font-family: authentic;
 
     src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
 
 @font-face
 {
-    font-family: authentic-bold;
 
     src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
 }
@@ -21,7 +19,7 @@
 
 body
 {
-    font-family: authentic;
+    src:url('docs/assets/fonts/FreeUniversal-Regular.ttf');
 
     overflow-x: hidden;
 
@@ -180,7 +178,7 @@ nav
     height: 100%;
     margin-left: 30px;
 
-    background-image: url('../content/me.jpg');
+    background-image: url('');
     background-position: center;
     background-size: cover;
 }
@@ -195,74 +193,6 @@ nav
     cursor: pointer;
 }
 
-
-.weworkHero
-{
-/*    border: 1px solid grey;*/
-    background-color: #F5F5F5;
-    background-image: url('../content/wework/wework_hero.svg');
-}
-.tgoHero
-{
-    border: 1px solid black;
-    background-color: #000;
-    background-image: url('../content/tgo/tgo_logo.svg');
-}
-/*.tgoHero:hover{
-    background-image: url("../videos/tgo_hero.gif");
-}*/
-.rhodyHero
-{
-    background-color: #ff7461;
-    background-image: url('../content/rides/rides_hero.svg');
-}
-/*.rhodyHero:hover{
-    background-image: url("../videos/rides_ani_logo.gif");
-}*/
-.museHero
-{
-    background-image: url('../content/muse/muse_hero.svg');
-}
-/*.museHero:hover{
-    background-image: url("../videos/muse_hero.gif");    
-}*/
-.flareHero
-{
-    background-image: url('../content/flare/flare_hero.svg');
-}
-.merlHero
-{
-    background-color: black;
-    background-image: url('../content/merl/merl_hero.svg');
-}
-.shuffleHero
-{
-    background-image: url('../content/shuffle/shuffle_hero.svg');
-}
-.zenniHero{
-    background-image: url('../content/zenni/zenni_hero.svg');
-}
-.ihsHero{
-    background-image: url('../content/ihs/ihs.svg');
-}
-.flagsHero{
-    background-image: url('../content/flags/flags_hero.svg');
-}
-.uberHero{
-    background-image: url('../content/uber/uber-hero.svg');
-}
-.linkedinHero{
-    background-image: url('../content/linkedin/linkedin-hero.svg');
-}
-.ibmAssistantHero{
-    background-image: url('../content/ibm/WA-bg.svg');
-}
-.ibmDiscoveryHero{
-    background-image: url('../content/ibm/WD-background.svg');
-}
-.ggfHero{
-    background-image: url('../content/ggf/ggf-hero.svg');
-}
 
 
 .heroInfo
